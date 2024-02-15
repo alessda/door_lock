@@ -1,0 +1,8 @@
+work	"counter.vhd"
+work	"door_lock.vhd"
+work	"flag_rst.vhd"
+work	"fsm.vhd"
+work	"keyboard.vhd"
+work	"match.vhd"
+work	"matrix_2_value.vhd"
+work	"rom.vhd"
