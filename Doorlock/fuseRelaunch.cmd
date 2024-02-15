@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Alessandro/Documents/VHDL Projects/doorlock/door_lock_tb_isim_beh.exe" -prj "C:/Users/Alessandro/Documents/VHDL Projects/doorlock/door_lock_tb_beh.prj" "work.door_lock_tb" 

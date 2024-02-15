@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/Alessandro/Documents/VHDL Projects/doorlock/door_lock.xst" -ofn "C:/Users/Alessandro/Documents/VHDL Projects/doorlock/door_lock.syr" 

@@ -1,0 +1,37 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Alessandro/Documents/VHDL Projects/doorlock/door_lock_tb_isim_beh.exe" -prj "C:/Users/Alessandro/Documents/VHDL Projects/doorlock/door_lock_tb_beh.prj" "work.door_lock_tb" 
+ISim P.58f (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/Alessandro/Documents/VHDL Projects/doorlock/rom.vhd" into library work
+Parsing VHDL file "C:/Users/Alessandro/Documents/VHDL Projects/doorlock/matrix_2_value.vhd" into library work
+Parsing VHDL file "C:/Users/Alessandro/Documents/VHDL Projects/doorlock/match.vhd" into library work
+Parsing VHDL file "C:/Users/Alessandro/Documents/VHDL Projects/doorlock/keyboard.vhd" into library work
+Parsing VHDL file "C:/Users/Alessandro/Documents/VHDL Projects/doorlock/fsm.vhd" into library work
+Parsing VHDL file "C:/Users/Alessandro/Documents/VHDL Projects/doorlock/flag_rst.vhd" into library work
+Parsing VHDL file "C:/Users/Alessandro/Documents/VHDL Projects/doorlock/counter.vhd" into library work
+Parsing VHDL file "C:/Users/Alessandro/Documents/VHDL Projects/doorlock/door_lock.vhd" into library work
+Parsing VHDL file "C:/Users/Alessandro/Documents/VHDL Projects/doorlock/door_lock_tb.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package vcomponents
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity keyboard [keyboard_default]
+Compiling architecture behavioral of entity matrix_2_value [matrix_2_value_default]
+Compiling architecture behavioral of entity counter [counter_default]
+Compiling architecture syn of entity rom [rom_default]
+Compiling architecture behavioral of entity fsm [fsm_default]
+Compiling architecture behavioral of entity match [match_default]
+Compiling architecture behavioral of entity flag_rst [flag_rst_default]
+Compiling architecture behavioral of entity door_lock [door_lock_default]
+Compiling architecture behavior of entity door_lock_tb
+Time Resolution for simulation is 1ps.
+Waiting for 7 sub-compilation(s) to finish...
+Compiled 23 VHDL Units
+Built simulation executable C:/Users/Alessandro/Documents/VHDL Projects/doorlock/door_lock_tb_isim_beh.exe
+Fuse Memory Usage: 51992 KB
+Fuse CPU Usage: 702 ms

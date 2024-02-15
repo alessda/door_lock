@@ -1,0 +1,717 @@
+Release 14.5 - xst P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: door_lock.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "door_lock.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "door_lock"
+Output Format                      : NGC
+Target Device                      : xc6slx4-3-csg225
+
+---- Source Options
+Top Module Name                    : door_lock
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\Alessandro\Documents\VHDL Projects\doorlock\rom.vhd" into library work
+Parsing entity <rom>.
+Parsing architecture <syn> of entity <rom>.
+Parsing VHDL file "C:\Users\Alessandro\Documents\VHDL Projects\doorlock\matrix_2_value.vhd" into library work
+Parsing entity <matrix_2_value>.
+Parsing architecture <Behavioral> of entity <matrix_2_value>.
+Parsing VHDL file "C:\Users\Alessandro\Documents\VHDL Projects\doorlock\match.vhd" into library work
+Parsing entity <match>.
+Parsing architecture <Behavioral> of entity <match>.
+Parsing VHDL file "C:\Users\Alessandro\Documents\VHDL Projects\doorlock\keyboard.vhd" into library work
+Parsing entity <keyboard>.
+Parsing architecture <Behavioral> of entity <keyboard>.
+Parsing VHDL file "C:\Users\Alessandro\Documents\VHDL Projects\doorlock\fsm.vhd" into library work
+Parsing entity <fsm>.
+Parsing architecture <Behavioral> of entity <fsm>.
+Parsing VHDL file "C:\Users\Alessandro\Documents\VHDL Projects\doorlock\flag_rst.vhd" into library work
+Parsing entity <flag_rst>.
+Parsing architecture <Behavioral> of entity <flag_rst>.
+Parsing VHDL file "C:\Users\Alessandro\Documents\VHDL Projects\doorlock\counter.vhd" into library work
+Parsing entity <counter>.
+Parsing architecture <Behavioral> of entity <counter>.
+Parsing VHDL file "C:\Users\Alessandro\Documents\VHDL Projects\doorlock\door_lock.vhd" into library work
+Parsing entity <door_lock>.
+Parsing architecture <Behavioral> of entity <door_lock>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <door_lock> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <keyboard> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "C:\Users\Alessandro\Documents\VHDL Projects\doorlock\keyboard.vhd" Line 60: current_state should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Alessandro\Documents\VHDL Projects\doorlock\keyboard.vhd" Line 64: col should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Alessandro\Documents\VHDL Projects\doorlock\keyboard.vhd" Line 72: col should be on the sensitivity list of the process
+
+Elaborating entity <matrix_2_value> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <counter> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <rom> (architecture <syn>) from library <work>.
+
+Elaborating entity <fsm> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "C:\Users\Alessandro\Documents\VHDL Projects\doorlock\fsm.vhd" Line 69: current_state should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Alessandro\Documents\VHDL Projects\doorlock\fsm.vhd" Line 72: badge should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Alessandro\Documents\VHDL Projects\doorlock\fsm.vhd" Line 96: badge should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Alessandro\Documents\VHDL Projects\doorlock\fsm.vhd" Line 118: badge should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Alessandro\Documents\VHDL Projects\doorlock\fsm.vhd" Line 134: badge should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Alessandro\Documents\VHDL Projects\doorlock\fsm.vhd" Line 148: badge should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Alessandro\Documents\VHDL Projects\doorlock\fsm.vhd" Line 154: keypressed should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Alessandro\Documents\VHDL Projects\doorlock\fsm.vhd" Line 166: match_ok should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Alessandro\Documents\VHDL Projects\doorlock\fsm.vhd" Line 172: count_in should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Alessandro\Documents\VHDL Projects\doorlock\fsm.vhd" Line 188: badge should be on the sensitivity list of the process
+
+Elaborating entity <match> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <flag_rst> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <door_lock>.
+    Related source file is "C:\Users\Alessandro\Documents\VHDL Projects\doorlock\door_lock.vhd".
+    Summary:
+	no macro.
+Unit <door_lock> synthesized.
+
+Synthesizing Unit <keyboard>.
+    Related source file is "C:\Users\Alessandro\Documents\VHDL Projects\doorlock\keyboard.vhd".
+    Found 2-bit register for signal <current_state>.
+    Found finite state machine <FSM_0> for signal <current_state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 1                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | notpressed                                     |
+    | Power Up State     | notpressed                                     |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <keyboard> synthesized.
+
+Synthesizing Unit <matrix_2_value>.
+    Related source file is "C:\Users\Alessandro\Documents\VHDL Projects\doorlock\matrix_2_value.vhd".
+WARNING:Xst:737 - Found 1-bit latch for signal <num<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <num<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <num<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <num<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   4 Latch(s).
+	inferred  21 Multiplexer(s).
+Unit <matrix_2_value> synthesized.
+
+Synthesizing Unit <counter>.
+    Related source file is "C:\Users\Alessandro\Documents\VHDL Projects\doorlock\counter.vhd".
+    Found 4-bit register for signal <temp>.
+    Found 4-bit adder for signal <temp[0]_GND_14_o_add_0_OUT> created at line 50.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   4 D-type flip-flop(s).
+Unit <counter> synthesized.
+
+Synthesizing Unit <rom>.
+    Related source file is "C:\Users\Alessandro\Documents\VHDL Projects\doorlock\rom.vhd".
+WARNING:Xst:647 - Input <ADDR<3:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:2999 - Signal 'ROM', unconnected in block 'rom', is tied to its initial value.
+    Found 4x4-bit single-port Read Only RAM <Mram_ROM> for signal <ROM>.
+    Found 4-bit register for signal <DATA>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   4 D-type flip-flop(s).
+Unit <rom> synthesized.
+
+Synthesizing Unit <fsm>.
+    Related source file is "C:\Users\Alessandro\Documents\VHDL Projects\doorlock\fsm.vhd".
+    Found 3-bit register for signal <current_state>.
+    Found 8x7-bit Read Only RAM for signal <_n0096>
+    Found 1-bit 7-to-1 multiplexer for signal <current_state[2]_PWR_12_o_Mux_38_o> created at line 69.
+WARNING:Xst:737 - Found 1-bit latch for signal <next_state<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <next_state<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <next_state<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <increase_num>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <increase_try>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <enable_rom>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <enable_match>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reset_num>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reset_try>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <error_system>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <rst_match>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   3 D-type flip-flop(s).
+	inferred  11 Latch(s).
+	inferred  32 Multiplexer(s).
+Unit <fsm> synthesized.
+
+Synthesizing Unit <match>.
+    Related source file is "C:\Users\Alessandro\Documents\VHDL Projects\doorlock\match.vhd".
+    Found 4-bit comparator equal for signal <num[3]_data[3]_equal_1_o> created at line 45
+    Summary:
+	inferred   1 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <match> synthesized.
+
+Synthesizing Unit <flag_rst>.
+    Related source file is "C:\Users\Alessandro\Documents\VHDL Projects\doorlock\flag_rst.vhd".
+    Summary:
+	no macro.
+Unit <flag_rst> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 4x4-bit single-port Read Only RAM                     : 1
+ 8x7-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 3
+ 4-bit adder                                           : 3
+# Registers                                            : 5
+ 3-bit register                                        : 1
+ 4-bit register                                        : 4
+# Latches                                              : 15
+ 1-bit latch                                           : 15
+# Comparators                                          : 1
+ 4-bit comparator equal                                : 1
+# Multiplexers                                         : 54
+ 1-bit 2-to-1 multiplexer                              : 53
+ 1-bit 7-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <enable_rom> (without init value) has a constant value of 1 in block <machine>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <counter>.
+The following registers are absorbed into counter <temp>: 1 register on signal <temp>.
+Unit <counter> synthesized (advanced).
+
+Synthesizing (advanced) Unit <fsm>.
+INFO:Xst:3231 - The small RAM <Mram__n0096> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 7-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <current_state> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <fsm> synthesized (advanced).
+
+Synthesizing (advanced) Unit <rom>.
+INFO:Xst:3231 - The small RAM <Mram_ROM> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 4-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <ADDR>          |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <rom> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 4x4-bit single-port distributed Read Only RAM         : 1
+ 8x7-bit single-port distributed Read Only RAM         : 1
+# Counters                                             : 3
+ 4-bit up counter                                      : 3
+# Registers                                            : 7
+ Flip-Flops                                            : 7
+# Comparators                                          : 1
+ 4-bit comparator equal                                : 1
+# Multiplexers                                         : 53
+ 1-bit 2-to-1 multiplexer                              : 52
+ 1-bit 7-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <enable_rom> (without init value) has a constant value of 1 in block <fsm>. This FF/Latch will be trimmed during the optimization process.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <current_state[1:2]> with user encoding.
+------------------------
+ State      | Encoding
+------------------------
+ notpressed | 00
+ pressed    | 01
+ released   | 10
+------------------------
+WARNING:Xst:2677 - Node <num_counter/temp_1> of sequential type is unconnected in block <door_lock>.
+WARNING:Xst:2677 - Node <num_counter/temp_0> of sequential type is unconnected in block <door_lock>.
+
+Optimizing unit <door_lock> ...
+
+Optimizing unit <fsm> ...
+
+Optimizing unit <matrix_2_value> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block door_lock, actual ratio is 3.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 19
+ Flip-Flops                                            : 19
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : door_lock.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 56
+#      INV                         : 2
+#      LUT2                        : 9
+#      LUT3                        : 11
+#      LUT4                        : 10
+#      LUT5                        : 9
+#      LUT6                        : 13
+#      MUXF7                       : 1
+#      VCC                         : 1
+# FlipFlops/Latches                : 33
+#      FD                          : 2
+#      FDCE                        : 10
+#      FDE_1                       : 4
+#      FDR                         : 3
+#      LD                          : 14
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 11
+#      IBUF                        : 10
+#      OBUF                        : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx4csg225-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              33  out of   4800     0%  
+ Number of Slice LUTs:                   54  out of   2400     2%  
+    Number used as Logic:                54  out of   2400     2%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     56
+   Number with an unused Flip Flop:      23  out of     56    41%  
+   Number with an unused LUT:             2  out of     56     3%  
+   Number of fully used LUT-FF pairs:    31  out of     56    55%  
+   Number of unique control sets:        14
+
+IO Utilization: 
+ Number of IOs:                          12
+ Number of bonded IOBs:                  12  out of    132     9%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRL/BUFHCEs:         1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------------------------------------------------------------------+------------------------------+-------+
+Clock Signal                                                                                   | Clock buffer(FF name)        | Load  |
+-----------------------------------------------------------------------------------------------+------------------------------+-------+
+clk                                                                                            | BUFGP                        | 19    |
+machine/current_state[2]_GND_26_o_Mux_53_o(machine/Mmux_current_state[2]_GND_26_o_Mux_53_o11:O)| NONE(*)(machine/error_system)| 1     |
+machine/current_state[2]_GND_24_o_Mux_49_o(machine/Mmux_current_state[2]_GND_24_o_Mux_49_o11:O)| NONE(*)(machine/reset_num)   | 1     |
+machine/current_state[2]_GND_16_o_Mux_43_o(machine/Mmux_current_state[2]_GND_16_o_Mux_43_o11:O)| NONE(*)(machine/increase_try)| 1     |
+machine/current_state[2]_GND_25_o_Mux_51_o(machine/Mmux_current_state[2]_GND_25_o_Mux_51_o11:O)| NONE(*)(machine/reset_try)   | 1     |
+machine/current_state[2]_GND_20_o_Mux_41_o(machine/Mmux_current_state[2]_GND_20_o_Mux_41_o11:O)| NONE(*)(machine/increase_num)| 2     |
+machine/Mram__n0096(machine/Mram__n009611:O)                                                   | NONE(*)(machine/rst_match)   | 1     |
+machine/current_state[2]_PWR_13_o_Mux_35_o(machine/Mmux_current_state[2]_PWR_13_o_Mux_35_o11:O)| NONE(*)(machine/next_state_2)| 3     |
+value/PWR_7_o_GND_7_o_OR_13_o(value/PWR_7_o_GND_7_o_OR_13_o1:O)                                | NONE(*)(value/num_2)         | 4     |
+-----------------------------------------------------------------------------------------------+------------------------------+-------+
+(*) These 8 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 4.677ns (Maximum Frequency: 213.821MHz)
+   Minimum input arrival time before clock: 3.983ns
+   Maximum output required time after clock: 5.102ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.677ns (frequency: 213.821MHz)
+  Total number of paths / destination ports: 49 / 20
+-------------------------------------------------------------------------
+Delay:               2.338ns (Levels of Logic = 1)
+  Source:            memory/DATA_1 (FF)
+  Destination:       match_counter/temp_3 (FF)
+  Source Clock:      clk falling
+  Destination Clock: clk rising
+
+  Data Path: memory/DATA_1 to match_counter/temp_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE_1:C->Q            1   0.447   0.684  memory/DATA_1 (memory/DATA_1)
+     LUT4:I2->O            4   0.203   0.683  compare/Mmux_match_ok1_SW0 (N5)
+     FDCE:CE                   0.322          match_counter/temp_3
+    ----------------------------------------
+    Total                      2.338ns (0.972ns logic, 1.366ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'machine/current_state[2]_GND_20_o_Mux_41_o'
+  Total number of paths / destination ports: 3 / 2
+-------------------------------------------------------------------------
+Offset:              2.689ns (Levels of Logic = 2)
+  Source:            badge<0> (PAD)
+  Destination:       machine/increase_num (LATCH)
+  Destination Clock: machine/current_state[2]_GND_20_o_Mux_41_o falling
+
+  Data Path: badge<0> to machine/increase_num
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            11   1.222   1.227  badge_0_IBUF (badge_0_IBUF)
+     LUT6:I1->O            1   0.203   0.000  machine/Mmux_current_state[2]_increase_num_Mux_40_o11 (machine/current_state[2]_increase_num_Mux_40_o)
+     LD:D                      0.037          machine/increase_num
+    ----------------------------------------
+    Total                      2.689ns (1.462ns logic, 1.227ns route)
+                                       (54.4% logic, 45.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'machine/current_state[2]_PWR_13_o_Mux_35_o'
+  Total number of paths / destination ports: 8 / 3
+-------------------------------------------------------------------------
+Offset:              3.983ns (Levels of Logic = 4)
+  Source:            badge<0> (PAD)
+  Destination:       machine/next_state_0 (LATCH)
+  Destination Clock: machine/current_state[2]_PWR_13_o_Mux_35_o falling
+
+  Data Path: badge<0> to machine/next_state_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            11   1.222   1.247  badge_0_IBUF (badge_0_IBUF)
+     LUT6:I0->O            4   0.203   0.931  machine/GND_16_o_keypressed_AND_12_o1 (machine/GND_16_o_keypressed_AND_12_o)
+     LUT6:I2->O            1   0.203   0.000  machine/Mmux_current_state[2]_PWR_12_o_Mux_38_o13_G (N14)
+     MUXF7:I1->O           1   0.140   0.000  machine/Mmux_current_state[2]_PWR_12_o_Mux_38_o13 (machine/current_state[2]_PWR_12_o_Mux_38_o)
+     LD:D                      0.037          machine/next_state_0
+    ----------------------------------------
+    Total                      3.983ns (1.805ns logic, 2.178ns route)
+                                       (45.3% logic, 54.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'value/PWR_7_o_GND_7_o_OR_13_o'
+  Total number of paths / destination ports: 78 / 4
+-------------------------------------------------------------------------
+Offset:              3.675ns (Levels of Logic = 3)
+  Source:            row<0> (PAD)
+  Destination:       value/num_2 (LATCH)
+  Destination Clock: value/PWR_7_o_GND_7_o_OR_13_o falling
+
+  Data Path: row<0> to value/num_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   1.222   0.962  row_0_IBUF (row_0_IBUF)
+     LUT4:I0->O            4   0.203   1.048  value/GND_7_o_row[0]_equal_8_o<0>1 (value/GND_7_o_row[0]_equal_8_o)
+     LUT6:I0->O            1   0.203   0.000  value/Mmux_num[0]_PWR_7_o_MUX_13_o121 (value/num[0]_PWR_7_o_MUX_21_o)
+     LD:D                      0.037          value/num_2
+    ----------------------------------------
+    Total                      3.675ns (1.665ns logic, 2.010ns route)
+                                       (45.3% logic, 54.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 16 / 2
+-------------------------------------------------------------------------
+Offset:              3.673ns (Levels of Logic = 3)
+  Source:            row<0> (PAD)
+  Destination:       input/current_state_FSM_FFd2 (FF)
+  Destination Clock: clk rising
+
+  Data Path: row<0> to input/current_state_FSM_FFd2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   1.222   0.962  row_0_IBUF (row_0_IBUF)
+     LUT4:I0->O            2   0.203   0.981  input/n0004<0>1 (input/n0004)
+     LUT6:I0->O            1   0.203   0.000  input/current_state_FSM_FFd2_rstpot (input/current_state_FSM_FFd2_rstpot)
+     FD:D                      0.102          input/current_state_FSM_FFd2
+    ----------------------------------------
+    Total                      3.673ns (1.730ns logic, 1.943ns route)
+                                       (47.1% logic, 52.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 3 / 1
+-------------------------------------------------------------------------
+Offset:              5.102ns (Levels of Logic = 2)
+  Source:            machine/current_state_0 (FF)
+  Destination:       unlock (PAD)
+  Source Clock:      clk rising
+
+  Data Path: machine/current_state_0 to unlock
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             19   0.447   1.300  machine/current_state_0 (machine/current_state_0)
+     LUT3:I0->O            1   0.205   0.579  machine/Mmux_current_state[2]_GND_26_o_Mux_53_o131 (unlock_OBUF)
+     OBUF:I->O                 2.571          unlock_OBUF (unlock)
+    ----------------------------------------
+    Total                      5.102ns (3.223ns logic, 1.879ns route)
+                                       (63.2% logic, 36.8% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+------------------------------------------+---------+---------+---------+---------+
+                                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                              |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------------------+---------+---------+---------+---------+
+clk                                       |    2.499|    2.338|    1.601|         |
+machine/Mram__n0096                       |         |    1.611|         |         |
+machine/current_state[2]_GND_16_o_Mux_43_o|         |    1.503|         |         |
+machine/current_state[2]_GND_20_o_Mux_41_o|         |    2.273|         |         |
+machine/current_state[2]_GND_24_o_Mux_49_o|         |    1.544|         |         |
+machine/current_state[2]_GND_25_o_Mux_51_o|         |    1.611|         |         |
+machine/current_state[2]_GND_26_o_Mux_53_o|         |    1.578|         |         |
+machine/current_state[2]_PWR_13_o_Mux_35_o|         |    1.179|         |         |
+value/PWR_7_o_GND_7_o_OR_13_o             |         |    2.532|         |         |
+------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock machine/Mram__n0096
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    1.989|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock machine/current_state[2]_GND_16_o_Mux_43_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    1.989|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock machine/current_state[2]_GND_20_o_Mux_41_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    2.079|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock machine/current_state[2]_GND_24_o_Mux_49_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    1.863|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock machine/current_state[2]_GND_25_o_Mux_51_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    1.989|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock machine/current_state[2]_GND_26_o_Mux_53_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    1.945|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock machine/current_state[2]_PWR_13_o_Mux_35_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    3.134|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.01 secs
+ 
+--> 
+
+Total memory usage is 4520524 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   34 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

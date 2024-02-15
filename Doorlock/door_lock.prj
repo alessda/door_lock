@@ -1,0 +1,8 @@
+vhdl work "rom.vhd"
+vhdl work "matrix_2_value.vhd"
+vhdl work "match.vhd"
+vhdl work "keyboard.vhd"
+vhdl work "fsm.vhd"
+vhdl work "flag_rst.vhd"
+vhdl work "counter.vhd"
+vhdl work "door_lock.vhd"
