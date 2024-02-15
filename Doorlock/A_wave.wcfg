@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/ise/Xilinx Projects/doorlock/door_lock_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="door_lock_tb" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="vcomponents" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="26" />
+   <wvobject fp_name="/door_lock_tb/badge" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">badge[1:0]</obj_property>
+      <obj_property name="ObjectShortName">badge[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/door_lock_tb/col" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">col[0:2]</obj_property>
+      <obj_property name="ObjectShortName">col[0:2]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/door_lock_tb/row" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">row[0:3]</obj_property>
+      <obj_property name="ObjectShortName">row[0:3]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/door_lock_tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffff00</obj_property>
+   </wvobject>
+   <wvobject fp_name="/door_lock_tb/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/door_lock_tb/unlock" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">unlock</obj_property>
+      <obj_property name="ObjectShortName">unlock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/door_lock_tb/uut/machine/keypressed" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">keypressed</obj_property>
+      <obj_property name="ObjectShortName">keypressed</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/door_lock_tb/uut/machine/badge" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">badge[1:0]</obj_property>
+      <obj_property name="ObjectShortName">badge[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/door_lock_tb/uut/machine/count_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">count_in[3:0]</obj_property>
+      <obj_property name="ObjectShortName">count_in[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/door_lock_tb/uut/machine/enable_match" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">enable_match</obj_property>
+      <obj_property name="ObjectShortName">enable_match</obj_property>
+   </wvobject>
+   <wvobject fp_name="/door_lock_tb/uut/machine/unlock" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">unlock</obj_property>
+      <obj_property name="ObjectShortName">unlock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/door_lock_tb/uut/machine/error_system" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">error_system</obj_property>
+      <obj_property name="ObjectShortName">error_system</obj_property>
+   </wvobject>
+   <wvobject fp_name="/door_lock_tb/uut/machine/current_state" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">current_state</obj_property>
+      <obj_property name="ObjectShortName">current_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/door_lock_tb/uut/machine/next_state" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">next_state</obj_property>
+      <obj_property name="ObjectShortName">next_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/door_lock_tb/uut/try_counter/increase" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">increase</obj_property>
+      <obj_property name="ObjectShortName">increase</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/door_lock_tb/uut/try_counter/output" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">output[0:3]</obj_property>
+      <obj_property name="ObjectShortName">output[0:3]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffffff</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/door_lock_tb/uut/num_counter/increase" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">increase</obj_property>
+      <obj_property name="ObjectShortName">increase</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/door_lock_tb/uut/num_counter/output" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">output[0:3]</obj_property>
+      <obj_property name="ObjectShortName">output[0:3]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff0000</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/door_lock_tb/uut/compare/data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data[3:0]</obj_property>
+      <obj_property name="ObjectShortName">data[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/door_lock_tb/uut/compare/num" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">num[3:0]</obj_property>
+      <obj_property name="ObjectShortName">num[3:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#008080</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/door_lock_tb/uut/machine/match_ok" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">match_ok[3:0]</obj_property>
+      <obj_property name="ObjectShortName">match_ok[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/door_lock_tb/uut/compare/enable" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">enable</obj_property>
+      <obj_property name="ObjectShortName">enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/door_lock_tb/uut/machine/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/door_lock_tb/uut/match_counter/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/door_lock_tb/uut/match_counter/increase" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">increase</obj_property>
+      <obj_property name="ObjectShortName">increase</obj_property>
+   </wvobject>
+   <wvobject fp_name="/door_lock_tb/uut/match_counter/output" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">output[0:3]</obj_property>
+      <obj_property name="ObjectShortName">output[0:3]</obj_property>
+   </wvobject>
+</wave_config>
