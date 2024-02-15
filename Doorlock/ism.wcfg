@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/ise/Xilinx Projects/doorlock/fsm_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="fsm_tb" />
+            <top_module name="std_logic_1164" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="16" />
+   <wvobject fp_name="/fsm_tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fsm_tb/keypressed" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">keypressed</obj_property>
+      <obj_property name="ObjectShortName">keypressed</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fsm_tb/badge" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">badge[1:0]</obj_property>
+      <obj_property name="ObjectShortName">badge[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fsm_tb/count_in" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">count_in[1:0]</obj_property>
+      <obj_property name="ObjectShortName">count_in[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fsm_tb/match_ok" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">match_ok</obj_property>
+      <obj_property name="ObjectShortName">match_ok</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fsm_tb/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fsm_tb/increase_num" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">increase_num</obj_property>
+      <obj_property name="ObjectShortName">increase_num</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fsm_tb/increase_try" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">increase_try</obj_property>
+      <obj_property name="ObjectShortName">increase_try</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fsm_tb/enable_rom" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">enable_rom</obj_property>
+      <obj_property name="ObjectShortName">enable_rom</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fsm_tb/enable_match" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">enable_match</obj_property>
+      <obj_property name="ObjectShortName">enable_match</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fsm_tb/unlock" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">unlock</obj_property>
+      <obj_property name="ObjectShortName">unlock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fsm_tb/uut/current_state" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">current_state</obj_property>
+      <obj_property name="ObjectShortName">current_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fsm_tb/uut/next_state" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">next_state</obj_property>
+      <obj_property name="ObjectShortName">next_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fsm_tb/uut/reset_try" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset_try</obj_property>
+      <obj_property name="ObjectShortName">reset_try</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fsm_tb/uut/reset_num" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset_num</obj_property>
+      <obj_property name="ObjectShortName">reset_num</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fsm_tb/uut/error_system" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">error_system</obj_property>
+      <obj_property name="ObjectShortName">error_system</obj_property>
+   </wvobject>
+</wave_config>

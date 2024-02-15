@@ -1,0 +1,19 @@
+ISim log file
+Running: C:\Users\Alessandro\Documents\VHDL Projects\doorlock\door_lock_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/Alessandro/Documents/VHDL Projects/doorlock/door_lock_tb_isim_beh.wdb 
+ISim P.58f (signature 0x7708f090)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 2000 ns
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /door_lock_tb/uut/memory/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps, Instance /door_lock_tb/uut/memory/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Finished circuit initialization process.
+ISim P.58f (signature 0x7708f090)
+This is a Full version of ISim.
+# run 2000 ns
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /door_lock_tb/uut/memory/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 0 ps, Instance /door_lock_tb/uut/memory/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Finished circuit initialization process.
